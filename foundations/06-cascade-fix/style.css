@@ -8,16 +8,54 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+/* .small-para {
   font-size: 14px;
-  font-weight: 800;
-}
+} */
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
+/* .confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+} */
+
+/* .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+} */
+
+/* Solution */
+
+.small-para {
+  font-size: 14px;
+}
+
+
+/* Alternative Solution for paragraph
+
+.para.small-para {
+  font-size: 14px;
+}
+
+*/
+
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +67,41 @@ body {
   font-size: 20px;
 }
 
-.child {
+/* First alternative solution for button  
+
+.button.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+} 
+  
+*/
+
+
+/* Second alternative solution for button 
+
+.button {
+  font-size: 20px;
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0);
+  font-size: 20px;
+}
+
+.confirm {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+} 
+
+*/
+
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
@@ -40,3 +112,19 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+
+/* Alternative Solution for the div 
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+*/
