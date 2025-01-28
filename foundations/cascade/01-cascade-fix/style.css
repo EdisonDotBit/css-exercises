@@ -8,7 +8,8 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+/* Either use chaining selector or move the .small-para  below the .para for rule order. */
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,26 +18,34 @@ body {
   font-size: 22px;
 }
 
+/* Can use #confirm-button. */
 .confirm {
   background: green;
   color: white;
   font-weight: bold;
 } 
 
-.button {
+/* Can use #cancel-button. */
+.cancel {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+
+/* Move out some of the declarations and left this here since both buttons have font-size 20px applied. */
+.button {
   font-size: 20px;
+}
+
+/* You can use descendant combinator but removing combinators and going for rule order would make more sense. */
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
 }
 
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
-
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
 }
