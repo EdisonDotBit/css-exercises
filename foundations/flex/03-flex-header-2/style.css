@@ -15,8 +15,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px;
 }
 
+.left-links,
+.right-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
 
 .profile-image {
   background: rebeccapurple;
